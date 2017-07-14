@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BCEBADC1F180A600025CD99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBADB1F180A600025CD99 /* AppDelegate.swift */; };
+		3BCEBADE1F180A600025CD99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBADD1F180A600025CD99 /* ViewController.swift */; };
+		3BCEBAE11F180A600025CD99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEBADF1F180A600025CD99 /* Main.storyboard */; };
+		3BCEBAE31F180A600025CD99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEBAE21F180A600025CD99 /* Assets.xcassets */; };
+		3BCEBAE61F180A600025CD99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEBAE41F180A600025CD99 /* LaunchScreen.storyboard */; };
+		3BCEBAF11F180A600025CD99 /* cryptickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBAF01F180A600025CD99 /* cryptickTests.swift */; };
+		3BCEBAFC1F180A600025CD99 /* cryptickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBAFB1F180A600025CD99 /* cryptickUITests.swift */; };
+		3BCEBB0D1F1812130025CD99 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBB0C1F1812130025CD99 /* MainViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BCEBAED1F180A600025CD99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BCEBAD01F180A5F0025CD99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BCEBAD71F180A5F0025CD99;
+			remoteInfo = cryptick;
+		};
+		3BCEBAF81F180A600025CD99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BCEBAD01F180A5F0025CD99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BCEBAD71F180A5F0025CD99;
+			remoteInfo = cryptick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BCEBAD81F180A600025CD99 /* cryptick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cryptick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCEBADB1F180A600025CD99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BCEBADD1F180A600025CD99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BCEBAE01F180A600025CD99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BCEBAE21F180A600025CD99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BCEBAE51F180A600025CD99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BCEBAE71F180A600025CD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BCEBAEC1F180A600025CD99 /* cryptickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cryptickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCEBAF01F180A600025CD99 /* cryptickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptickTests.swift; sourceTree = "<group>"; };
+		3BCEBAF21F180A600025CD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BCEBAF71F180A600025CD99 /* cryptickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cryptickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCEBAFB1F180A600025CD99 /* cryptickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptickUITests.swift; sourceTree = "<group>"; };
+		3BCEBAFD1F180A600025CD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BCEBB0C1F1812130025CD99 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MainView/MainViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BCEBAD51F180A5F0025CD99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEBAE91F180A600025CD99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEBAF41F180A600025CD99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BCEBACF1F180A5F0025CD99 = {
+			isa = PBXGroup;
+			children = (
+				3BCEBADA1F180A600025CD99 /* cryptick */,
+				3BCEBAEF1F180A600025CD99 /* cryptickTests */,
+				3BCEBAFA1F180A600025CD99 /* cryptickUITests */,
+				3BCEBAD91F180A600025CD99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BCEBAD91F180A600025CD99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEBAD81F180A600025CD99 /* cryptick.app */,
+				3BCEBAEC1F180A600025CD99 /* cryptickTests.xctest */,
+				3BCEBAF71F180A600025CD99 /* cryptickUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BCEBADA1F180A600025CD99 /* cryptick */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEBB0B1F18119B0025CD99 /* Controllers */,
+				3BCEBADB1F180A600025CD99 /* AppDelegate.swift */,
+				3BCEBADD1F180A600025CD99 /* ViewController.swift */,
+				3BCEBADF1F180A600025CD99 /* Main.storyboard */,
+				3BCEBAE21F180A600025CD99 /* Assets.xcassets */,
+				3BCEBAE41F180A600025CD99 /* LaunchScreen.storyboard */,
+				3BCEBAE71F180A600025CD99 /* Info.plist */,
+			);
+			path = cryptick;
+			sourceTree = "<group>";
+		};
+		3BCEBAEF1F180A600025CD99 /* cryptickTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEBAF01F180A600025CD99 /* cryptickTests.swift */,
+				3BCEBAF21F180A600025CD99 /* Info.plist */,
+			);
+			path = cryptickTests;
+			sourceTree = "<group>";
+		};
+		3BCEBAFA1F180A600025CD99 /* cryptickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEBAFB1F180A600025CD99 /* cryptickUITests.swift */,
+				3BCEBAFD1F180A600025CD99 /* Info.plist */,
+			);
+			path = cryptickUITests;
+			sourceTree = "<group>";
+		};
+		3BCEBB0B1F18119B0025CD99 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEBB0C1F1812130025CD99 /* MainViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BCEBAD71F180A5F0025CD99 /* cryptick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCEBB001F180A600025CD99 /* Build configuration list for PBXNativeTarget "cryptick" */;
+			buildPhases = (
+				3BCEBAD41F180A5F0025CD99 /* Sources */,
+				3BCEBAD51F180A5F0025CD99 /* Frameworks */,
+				3BCEBAD61F180A5F0025CD99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cryptick;
+			productName = cryptick;
+			productReference = 3BCEBAD81F180A600025CD99 /* cryptick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BCEBAEB1F180A600025CD99 /* cryptickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCEBB031F180A600025CD99 /* Build configuration list for PBXNativeTarget "cryptickTests" */;
+			buildPhases = (
+				3BCEBAE81F180A600025CD99 /* Sources */,
+				3BCEBAE91F180A600025CD99 /* Frameworks */,
+				3BCEBAEA1F180A600025CD99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BCEBAEE1F180A600025CD99 /* PBXTargetDependency */,
+			);
+			name = cryptickTests;
+			productName = cryptickTests;
+			productReference = 3BCEBAEC1F180A600025CD99 /* cryptickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3BCEBAF61F180A600025CD99 /* cryptickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCEBB061F180A600025CD99 /* Build configuration list for PBXNativeTarget "cryptickUITests" */;
+			buildPhases = (
+				3BCEBAF31F180A600025CD99 /* Sources */,
+				3BCEBAF41F180A600025CD99 /* Frameworks */,
+				3BCEBAF51F180A600025CD99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BCEBAF91F180A600025CD99 /* PBXTargetDependency */,
+			);
+			name = cryptickUITests;
+			productName = cryptickUITests;
+			productReference = 3BCEBAF71F180A600025CD99 /* cryptickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BCEBAD01F180A5F0025CD99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Steeve Monniere";
+				TargetAttributes = {
+					3BCEBAD71F180A5F0025CD99 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = C65M6AU29L;
+						ProvisioningStyle = Automatic;
+					};
+					3BCEBAEB1F180A600025CD99 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = C65M6AU29L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3BCEBAD71F180A5F0025CD99;
+					};
+					3BCEBAF61F180A600025CD99 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = C65M6AU29L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3BCEBAD71F180A5F0025CD99;
+					};
+				};
+			};
+			buildConfigurationList = 3BCEBAD31F180A5F0025CD99 /* Build configuration list for PBXProject "cryptick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BCEBACF1F180A5F0025CD99;
+			productRefGroup = 3BCEBAD91F180A600025CD99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BCEBAD71F180A5F0025CD99 /* cryptick */,
+				3BCEBAEB1F180A600025CD99 /* cryptickTests */,
+				3BCEBAF61F180A600025CD99 /* cryptickUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BCEBAD61F180A5F0025CD99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEBAE61F180A600025CD99 /* LaunchScreen.storyboard in Resources */,
+				3BCEBAE31F180A600025CD99 /* Assets.xcassets in Resources */,
+				3BCEBAE11F180A600025CD99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEBAEA1F180A600025CD99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEBAF51F180A600025CD99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BCEBAD41F180A5F0025CD99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEBB0D1F1812130025CD99 /* MainViewController.swift in Sources */,
+				3BCEBADE1F180A600025CD99 /* ViewController.swift in Sources */,
+				3BCEBADC1F180A600025CD99 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEBAE81F180A600025CD99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEBAF11F180A600025CD99 /* cryptickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEBAF31F180A600025CD99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEBAFC1F180A600025CD99 /* cryptickUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BCEBAEE1F180A600025CD99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BCEBAD71F180A5F0025CD99 /* cryptick */;
+			targetProxy = 3BCEBAED1F180A600025CD99 /* PBXContainerItemProxy */;
+		};
+		3BCEBAF91F180A600025CD99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BCEBAD71F180A5F0025CD99 /* cryptick */;
+			targetProxy = 3BCEBAF81F180A600025CD99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BCEBADF1F180A600025CD99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BCEBAE01F180A600025CD99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BCEBAE41F180A600025CD99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BCEBAE51F180A600025CD99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BCEBAFE1F180A600025CD99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BCEBAFF1F180A600025CD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BCEBB011F180A600025CD99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C65M6AU29L;
+				INFOPLIST_FILE = cryptick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinchillasoft.cryptick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3BCEBB021F180A600025CD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C65M6AU29L;
+				INFOPLIST_FILE = cryptick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinchillasoft.cryptick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3BCEBB041F180A600025CD99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C65M6AU29L;
+				INFOPLIST_FILE = cryptickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinchillasoft..cryptickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cryptick.app/cryptick";
+			};
+			name = Debug;
+		};
+		3BCEBB051F180A600025CD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C65M6AU29L;
+				INFOPLIST_FILE = cryptickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinchillasoft..cryptickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cryptick.app/cryptick";
+			};
+			name = Release;
+		};
+		3BCEBB071F180A600025CD99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = C65M6AU29L;
+				INFOPLIST_FILE = cryptickUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinchillasoft..cryptickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = cryptick;
+			};
+			name = Debug;
+		};
+		3BCEBB081F180A600025CD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = C65M6AU29L;
+				INFOPLIST_FILE = cryptickUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinchillasoft..cryptickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = cryptick;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BCEBAD31F180A5F0025CD99 /* Build configuration list for PBXProject "cryptick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCEBAFE1F180A600025CD99 /* Debug */,
+				3BCEBAFF1F180A600025CD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BCEBB001F180A600025CD99 /* Build configuration list for PBXNativeTarget "cryptick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCEBB011F180A600025CD99 /* Debug */,
+				3BCEBB021F180A600025CD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3BCEBB031F180A600025CD99 /* Build configuration list for PBXNativeTarget "cryptickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCEBB041F180A600025CD99 /* Debug */,
+				3BCEBB051F180A600025CD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3BCEBB061F180A600025CD99 /* Build configuration list for PBXNativeTarget "cryptickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCEBB071F180A600025CD99 /* Debug */,
+				3BCEBB081F180A600025CD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BCEBAD01F180A5F0025CD99 /* Project object */;
+}
