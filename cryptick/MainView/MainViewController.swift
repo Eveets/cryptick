@@ -81,6 +81,9 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     
     override func viewWillAppear(_ animated: Bool) {
         //Update the Currency data
+        TickerManager.sharedInstance.fetchAll()
+        
+        
     
     }
     

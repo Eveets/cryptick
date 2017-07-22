@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B2936941F212806004375EE /* TickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2936931F212806004375EE /* TickerManager.swift */; };
+		3B2936961F213446004375EE /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2936951F213446004375EE /* Ticker.swift */; };
 		3BCEBADC1F180A600025CD99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBADB1F180A600025CD99 /* AppDelegate.swift */; };
 		3BCEBADE1F180A600025CD99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBADD1F180A600025CD99 /* ViewController.swift */; };
 		3BCEBAE11F180A600025CD99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEBADF1F180A600025CD99 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B2936931F212806004375EE /* TickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TickerManager.swift; path = Model/TickerManager.swift; sourceTree = "<group>"; };
+		3B2936951F213446004375EE /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ticker.swift; path = Model/Ticker.swift; sourceTree = "<group>"; };
 		3BCEBAD81F180A600025CD99 /* cryptick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cryptick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCEBADB1F180A600025CD99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BCEBADD1F180A600025CD99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B2936921F21029D004375EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B2936931F212806004375EE /* TickerManager.swift */,
+				3B2936951F213446004375EE /* Ticker.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3BCEBACF1F180A5F0025CD99 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 		3BCEBADA1F180A600025CD99 /* cryptick */ = {
 			isa = PBXGroup;
 			children = (
+				3B2936921F21029D004375EE /* Model */,
 				3BCEBB0B1F18119B0025CD99 /* Controllers */,
 				3BCEBADB1F180A600025CD99 /* AppDelegate.swift */,
 				3BCEBADD1F180A600025CD99 /* ViewController.swift */,
@@ -274,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BCEBB0D1F1812130025CD99 /* MainViewController.swift in Sources */,
+				3B2936941F212806004375EE /* TickerManager.swift in Sources */,
+				3B2936961F213446004375EE /* Ticker.swift in Sources */,
 				3BCEBADE1F180A600025CD99 /* ViewController.swift in Sources */,
 				3BCEBADC1F180A600025CD99 /* AppDelegate.swift in Sources */,
 			);
@@ -528,6 +544,7 @@
 				3BCEBB021F180A600025CD99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BCEBB031F180A600025CD99 /* Build configuration list for PBXNativeTarget "cryptickTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +553,7 @@
 				3BCEBB051F180A600025CD99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BCEBB061F180A600025CD99 /* Build configuration list for PBXNativeTarget "cryptickUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +562,7 @@
 				3BCEBB081F180A600025CD99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
