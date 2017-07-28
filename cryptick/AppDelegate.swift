@@ -21,24 +21,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var tabBarController:UITabBarController!
         var viewController1:MainViewController!
         var viewController2:MainViewController!
-        var viewController3:MainViewController!
+        var viewController3:UIViewController!
+        
+        //Initialize and fetch the active symbol
+        TickerManager.sharedInstance
+        
         
         viewController1 = MainViewController()
-        viewController1.title = "XBT"
-        viewController1.currencySymbol = "XBT"
-        viewController1.currencyValue = 2401.54
-        viewController1.refCurrencySymbol = "USD"
+        viewController1.title = "Bitcoin"
+        viewController1.base = "XXBT"
+        viewController1.quote = "ZUSD"
+        viewController1.tabBarItem = UITabBarItem(title: "Bitcoin", image: UIImage(named: "xxbt"), selectedImage: UIImage(named: "xxbt"))
+        
         viewController2 = MainViewController()
-        viewController2.title = "ETH"
-        viewController2.currencySymbol = "ETH"
-        viewController2.currencyValue = 204.11
-        viewController2.refCurrencySymbol = "USD"
-        viewController3 = MainViewController()
-        viewController3.title = "USD"
-        viewController3.currencySymbol = "USD"
-        viewController3.refCurrencySymbol = "CAD"
-        viewController3.currencyValue = 1.27982
-
+        viewController2.title = "Ethereum"
+        viewController2.base = "XETH"
+        viewController2.quote = "ZUSD"
+        viewController2.tabBarItem = UITabBarItem(title: "Ethereum", image: UIImage(named: "xeth"), selectedImage: UIImage(named: "xeth"))
+        
+        viewController3 = UIViewController()
+        viewController3.title = "Settings"
+        
         tabBarController = UITabBarController()
         tabBarController.addChildViewController(viewController1)
         tabBarController.addChildViewController(viewController2)

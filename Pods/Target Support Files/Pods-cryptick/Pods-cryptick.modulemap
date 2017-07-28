@@ -1,0 +1,6 @@
+framework module Pods_cryptick {
+  umbrella header "Pods-cryptick-umbrella.h"
+
+  export *
+  module * { export * }
+}

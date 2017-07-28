@@ -1,0 +1,6 @@
+framework module Pods_cryptickTests {
+  umbrella header "Pods-cryptickTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

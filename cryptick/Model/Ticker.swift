@@ -9,21 +9,48 @@
 import UIKit
 
 class Ticker: NSObject {
-    var originCurrency: String?
-    var destinationCurrency: String?
-    var trade_id:Int64?
-    var price:Int64?
-    var size:Int64?
-    var bid:Int64?
-    var ask:Int64?
-    var volume:Int64?
-    var time:Date?
+    //Pair Info
     
-    static func ticker (originCurrency :String,  destinationCurrency: String) -> Ticker
+    var base:String?
+    var quote:String?
+    
+    var active : Bool = false
+
+    //Info
+    var price:Double?
+    var ask:Double?
+    var bid:Double?
+    var low:Double?
+    var high:Double?
+    var volume:Double?
+    var openPrice:Double?
+    
+    
+    //Calculated value
+    var pairName:String {
+        get{return String.localizedStringWithFormat("%@%@", base!, quote!)}
+        set{}
+    }
+    
+    
+    var percentChange:Double {
+        get{
+            if(price != nil && openPrice != nil && openPrice != 0.0){
+                return price!/openPrice!;
+            }
+            else
+            {
+                return 0.00
+            }
+        }
+        set{}
+    }
+    
+    static func ticker (base:String, quote:String) -> Ticker
     {
         let t = Ticker.init()
-        t.originCurrency = originCurrency
-        t.destinationCurrency = destinationCurrency
+        t.base = base
+        t.quote = quote
         return t
     }
 }

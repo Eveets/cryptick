@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05A09B9B2083B8999BE1CC617C3A0941 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
+		09FD69BAA5089D446452266882C4EBBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0B6CF0D3E75322FFACB467D2C26D9CB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0FFA65D13FA25E8A327A474BC1264A9C /* Pods-cryptick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE38BC979163C0EFCD2071ED4CE53EA /* Pods-cryptick-dummy.m */; };
+		3C8F0F3E3F5F3150FE1ED07FAD180E1E /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		408B6CA64857E6E44B0626A95C2147C4 /* Pods-cryptickUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E935679E20BECE224590E88D20801 /* Pods-cryptickUITests-dummy.m */; };
+		520868FC9A90BD88EB69A8BAF50A9BAF /* Pods-cryptickUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27472A3437332AA383B2C59A3CD668CF /* Pods-cryptickUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		547A9BC9ED0E0428F791F6BC93B50486 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		62C6A53BAA58D17BDB00F8ACA4AA3F38 /* Pods-cryptickTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A99CCAEC617FBA470F103229604B8 /* Pods-cryptickTests-dummy.m */; };
+		78CB77079A9F3EFC446A211E6546BD76 /* Pods-cryptickTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06953DE1F3BC1169D1BA388939A5543A /* Pods-cryptickTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4EC9B1F0C7140EAB0ECD378B5CB5FC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E35A27E8688DA8639073DA88775C4C11 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
+		EF05EC922513E9256BCCABF0C9EBD704 /* Pods-cryptick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C1800A7F2F6D4CDF6D0664029CE7057 /* Pods-cryptick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E17039B6679AA6C2B5DE820CF984FB81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93D466C1AE1354BFB2B64859F880E156;
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		06953DE1F3BC1169D1BA388939A5543A /* Pods-cryptickTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-cryptickTests-umbrella.h"; sourceTree = "<group>"; };
+		07CBD88CEB0A46960DA0DD8093747CF0 /* Pods-cryptickTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-cryptickTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0B3E935679E20BECE224590E88D20801 /* Pods-cryptickUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-cryptickUITests-dummy.m"; sourceTree = "<group>"; };
+		0CC0C4FD1CFA578F700EC5CA8CDFDA6A /* Pods-cryptickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cryptickTests.release.xcconfig"; sourceTree = "<group>"; };
+		125D356F4CB57DFCEB30B854C8058B93 /* Pods-cryptick-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cryptick-frameworks.sh"; sourceTree = "<group>"; };
+		15A9C2B9C897DFBC3CB995144A4D553B /* Pods-cryptickUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-cryptickUITests.modulemap"; sourceTree = "<group>"; };
+		27472A3437332AA383B2C59A3CD668CF /* Pods-cryptickUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-cryptickUITests-umbrella.h"; sourceTree = "<group>"; };
+		2B458FE68C732262CD28274AD11E18E5 /* Pods-cryptickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cryptickUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		31FA2BEC539CC05E5B3B40323D553DFA /* Pods-cryptickUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cryptickUITests-frameworks.sh"; sourceTree = "<group>"; };
+		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		3482E221A4FD0195416768C8895C2C57 /* Pods_cryptick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_cryptick.framework; path = "Pods-cryptick.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D0957E4408B8B102A30930EFE8D62D /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC83171E88E9750CB12EA8647DF2E83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8E0FA1D33498A2902222D487FDD4E2 /* Pods-cryptickUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cryptickUITests-resources.sh"; sourceTree = "<group>"; };
+		436E2F0E7474CE5CD1D08D79DF88D7E1 /* Pods-cryptick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-cryptick.modulemap"; sourceTree = "<group>"; };
+		4C619DD39DD648068B7D7C6CB8241724 /* Pods-cryptickUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cryptickUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5019FE182DBFE656F0305E9BFB992500 /* Pods-cryptick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cryptick.debug.xcconfig"; sourceTree = "<group>"; };
+		5665D0D040715356B2A3E3796222BD22 /* Pods-cryptickTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-cryptickTests.modulemap"; sourceTree = "<group>"; };
+		5C1800A7F2F6D4CDF6D0664029CE7057 /* Pods-cryptick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-cryptick-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6612198C460281B53048DF7C6C40D41D /* Pods-cryptickTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cryptickTests-resources.sh"; sourceTree = "<group>"; };
+		6BD52BE7CBC9DDAE5C014D04E40BC138 /* Pods_cryptickUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_cryptickUITests.framework; path = "Pods-cryptickUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB410847130E72AE80B5CE962546222 /* Pods-cryptick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cryptick.release.xcconfig"; sourceTree = "<group>"; };
+		7613F1E011B5AEB388731341CEF61EE5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7997E1B148F54BEF62D2F593C9F55085 /* Pods-cryptickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cryptickTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A0EE77F102EB854C35703BEC6D12546 /* Pods_cryptickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_cryptickTests.framework; path = "Pods-cryptickTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90A920E1FAC47DB05BADE753BF72E5AF /* Pods-cryptickTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-cryptickTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9688D714A59DED8B1DB7F01CFF50CC17 /* Pods-cryptick-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cryptick-resources.sh"; sourceTree = "<group>"; };
+		A1E0E9B220057F14B446D906A6E11A56 /* Pods-cryptickUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-cryptickUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B0B0D54ED274764F4F49DBBA1FBC8D57 /* Pods-cryptickTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cryptickTests-frameworks.sh"; sourceTree = "<group>"; };
+		B2547A4CEF488BA3A730B5199843BC92 /* Pods-cryptick-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-cryptick-acknowledgements.plist"; sourceTree = "<group>"; };
+		B27A99CCAEC617FBA470F103229604B8 /* Pods-cryptickTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-cryptickTests-dummy.m"; sourceTree = "<group>"; };
+		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE38BC979163C0EFCD2071ED4CE53EA /* Pods-cryptick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-cryptick-dummy.m"; sourceTree = "<group>"; };
+		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		DF4B6A1290397DFD86B13CF7CC26EF67 /* Pods-cryptickUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-cryptickUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EAB73C80EC19CDFF296046A9B35FC1E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F005FC734BE7361E1AFA66FDF6319625 /* Pods-cryptick-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-cryptick-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		090B523C37648BA586B12812A59F4D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4EC9B1F0C7140EAB0ECD378B5CB5FC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A7A2BB9510D84D4C5F549AF8ECE8654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547A9BC9ED0E0428F791F6BC93B50486 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A322F2A7C847DF27BDC7EFB57CABB62D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FD69BAA5089D446452266882C4EBBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF090C4FA64D1AA81CA42F99265BCF98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6CF0D3E75322FFACB467D2C26D9CB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D2B7F4163F2FA06B5BC313B3E75BA56 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B24E53D982B953339093C12CE09A29A9 /* Pods-cryptick */,
+				DEBC54428136F9985AFAABB7302595CC /* Pods-cryptickTests */,
+				21D14EAE4823F71C08782386C49A2E2B /* Pods-cryptickUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		21D14EAE4823F71C08782386C49A2E2B /* Pods-cryptickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3EC83171E88E9750CB12EA8647DF2E83 /* Info.plist */,
+				15A9C2B9C897DFBC3CB995144A4D553B /* Pods-cryptickUITests.modulemap */,
+				A1E0E9B220057F14B446D906A6E11A56 /* Pods-cryptickUITests-acknowledgements.markdown */,
+				DF4B6A1290397DFD86B13CF7CC26EF67 /* Pods-cryptickUITests-acknowledgements.plist */,
+				0B3E935679E20BECE224590E88D20801 /* Pods-cryptickUITests-dummy.m */,
+				31FA2BEC539CC05E5B3B40323D553DFA /* Pods-cryptickUITests-frameworks.sh */,
+				3F8E0FA1D33498A2902222D487FDD4E2 /* Pods-cryptickUITests-resources.sh */,
+				27472A3437332AA383B2C59A3CD668CF /* Pods-cryptickUITests-umbrella.h */,
+				4C619DD39DD648068B7D7C6CB8241724 /* Pods-cryptickUITests.debug.xcconfig */,
+				2B458FE68C732262CD28274AD11E18E5 /* Pods-cryptickUITests.release.xcconfig */,
+			);
+			name = "Pods-cryptickUITests";
+			path = "Target Support Files/Pods-cryptickUITests";
+			sourceTree = "<group>";
+		};
+		5851C6A9F11184A33FC5D2621A2B161B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3482E221A4FD0195416768C8895C2C57 /* Pods_cryptick.framework */,
+				7A0EE77F102EB854C35703BEC6D12546 /* Pods_cryptickTests.framework */,
+				6BD52BE7CBC9DDAE5C014D04E40BC138 /* Pods_cryptickUITests.framework */,
+				38D0957E4408B8B102A30930EFE8D62D /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
+				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
+				5851C6A9F11184A33FC5D2621A2B161B /* Products */,
+				0D2B7F4163F2FA06B5BC313B3E75BA56 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8EC39E1DC11846207722B71AAFE40F98 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */,
+				D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */,
+				2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */,
+				32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */,
+				BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */,
+				05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		B24E53D982B953339093C12CE09A29A9 /* Pods-cryptick */ = {
+			isa = PBXGroup;
+			children = (
+				7613F1E011B5AEB388731341CEF61EE5 /* Info.plist */,
+				436E2F0E7474CE5CD1D08D79DF88D7E1 /* Pods-cryptick.modulemap */,
+				F005FC734BE7361E1AFA66FDF6319625 /* Pods-cryptick-acknowledgements.markdown */,
+				B2547A4CEF488BA3A730B5199843BC92 /* Pods-cryptick-acknowledgements.plist */,
+				CEE38BC979163C0EFCD2071ED4CE53EA /* Pods-cryptick-dummy.m */,
+				125D356F4CB57DFCEB30B854C8058B93 /* Pods-cryptick-frameworks.sh */,
+				9688D714A59DED8B1DB7F01CFF50CC17 /* Pods-cryptick-resources.sh */,
+				5C1800A7F2F6D4CDF6D0664029CE7057 /* Pods-cryptick-umbrella.h */,
+				5019FE182DBFE656F0305E9BFB992500 /* Pods-cryptick.debug.xcconfig */,
+				6DB410847130E72AE80B5CE962546222 /* Pods-cryptick.release.xcconfig */,
+			);
+			name = "Pods-cryptick";
+			path = "Target Support Files/Pods-cryptick";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DEBC54428136F9985AFAABB7302595CC /* Pods-cryptickTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAB73C80EC19CDFF296046A9B35FC1E6 /* Info.plist */,
+				5665D0D040715356B2A3E3796222BD22 /* Pods-cryptickTests.modulemap */,
+				07CBD88CEB0A46960DA0DD8093747CF0 /* Pods-cryptickTests-acknowledgements.markdown */,
+				90A920E1FAC47DB05BADE753BF72E5AF /* Pods-cryptickTests-acknowledgements.plist */,
+				B27A99CCAEC617FBA470F103229604B8 /* Pods-cryptickTests-dummy.m */,
+				B0B0D54ED274764F4F49DBBA1FBC8D57 /* Pods-cryptickTests-frameworks.sh */,
+				6612198C460281B53048DF7C6C40D41D /* Pods-cryptickTests-resources.sh */,
+				06953DE1F3BC1169D1BA388939A5543A /* Pods-cryptickTests-umbrella.h */,
+				7997E1B148F54BEF62D2F593C9F55085 /* Pods-cryptickTests.debug.xcconfig */,
+				0CC0C4FD1CFA578F700EC5CA8CDFDA6A /* Pods-cryptickTests.release.xcconfig */,
+			);
+			name = "Pods-cryptickTests";
+			path = "Target Support Files/Pods-cryptickTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5E32152D01094250875E30C66C7F6636 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520868FC9A90BD88EB69A8BAF50A9BAF /* Pods-cryptickUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FA7D99FC6FA2CCFA0EA881CF8BDE14E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78CB77079A9F3EFC446A211E6546BD76 /* Pods-cryptickTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D21ACDB49FDC581DBA3841F3383079C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8F0F3E3F5F3150FE1ED07FAD180E1E /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C2726B4A491153699ACB832C9A090E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF05EC922513E9256BCCABF0C9EBD704 /* Pods-cryptick-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1161D9FE28A17ACE99A7CB41B0392712 /* Pods-cryptick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 393DF6CE09CDB351B1F1912410225086 /* Build configuration list for PBXNativeTarget "Pods-cryptick" */;
+			buildPhases = (
+				E218B861BB859735B64C76B5B43E0D2B /* Sources */,
+				3A7A2BB9510D84D4C5F549AF8ECE8654 /* Frameworks */,
+				E8C2726B4A491153699ACB832C9A090E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7477B8F0D9302731EC50CBE02AFBABD1 /* PBXTargetDependency */,
+			);
+			name = "Pods-cryptick";
+			productName = "Pods-cryptick";
+			productReference = 3482E221A4FD0195416768C8895C2C57 /* Pods_cryptick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		14F1D522E93A54DF842F8DE28C8DF39D /* Pods-cryptickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D125DD6D051615713A86F018C17B79C4 /* Build configuration list for PBXNativeTarget "Pods-cryptickTests" */;
+			buildPhases = (
+				EAA9C54B9518C40DAB449D1ACF49AB0D /* Sources */,
+				A322F2A7C847DF27BDC7EFB57CABB62D /* Frameworks */,
+				6FA7D99FC6FA2CCFA0EA881CF8BDE14E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-cryptickTests";
+			productName = "Pods-cryptickTests";
+			productReference = 7A0EE77F102EB854C35703BEC6D12546 /* Pods_cryptickTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93D466C1AE1354BFB2B64859F880E156 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 374A5D10A57251B6C0859BEE6D069758 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				F15973B5DEC5E4A8413778C74DF9548E /* Sources */,
+				FF090C4FA64D1AA81CA42F99265BCF98 /* Frameworks */,
+				9D21ACDB49FDC581DBA3841F3383079C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 38D0957E4408B8B102A30930EFE8D62D /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B699B4C5547CD14DB13A60CE6C01E9BA /* Pods-cryptickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77FCFCB3A2F77A1289A57FD4A0B7B870 /* Build configuration list for PBXNativeTarget "Pods-cryptickUITests" */;
+			buildPhases = (
+				1E939023F893EF9E3CCED8E7536BB072 /* Sources */,
+				090B523C37648BA586B12812A59F4D98 /* Frameworks */,
+				5E32152D01094250875E30C66C7F6636 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-cryptickUITests";
+			productName = "Pods-cryptickUITests";
+			productReference = 6BD52BE7CBC9DDAE5C014D04E40BC138 /* Pods_cryptickUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5851C6A9F11184A33FC5D2621A2B161B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1161D9FE28A17ACE99A7CB41B0392712 /* Pods-cryptick */,
+				14F1D522E93A54DF842F8DE28C8DF39D /* Pods-cryptickTests */,
+				B699B4C5547CD14DB13A60CE6C01E9BA /* Pods-cryptickUITests */,
+				93D466C1AE1354BFB2B64859F880E156 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E939023F893EF9E3CCED8E7536BB072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408B6CA64857E6E44B0626A95C2147C4 /* Pods-cryptickUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E218B861BB859735B64C76B5B43E0D2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FFA65D13FA25E8A327A474BC1264A9C /* Pods-cryptick-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA9C54B9518C40DAB449D1ACF49AB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C6A53BAA58D17BDB00F8ACA4AA3F38 /* Pods-cryptickTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15973B5DEC5E4A8413778C74DF9548E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A09B9B2083B8999BE1CC617C3A0941 /* SwiftyJSON-dummy.m in Sources */,
+				E35A27E8688DA8639073DA88775C4C11 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7477B8F0D9302731EC50CBE02AFBABD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 93D466C1AE1354BFB2B64859F880E156 /* SwiftyJSON */;
+			targetProxy = E17039B6679AA6C2B5DE820CF984FB81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D28C252035DBFF198D7092527531BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CC0C4FD1CFA578F700EC5CA8CDFDA6A /* Pods-cryptickTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-cryptickTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-cryptickTests/Pods-cryptickTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_cryptickTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1EAE473C3E741B87466884D72F2B2049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DB410847130E72AE80B5CE962546222 /* Pods-cryptick.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-cryptick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-cryptick/Pods-cryptick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_cryptick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		228A829200E38B3EEC9518492CD7F2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		319FAFA00588D6DF2EB944A5EEB14142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76C4706DB357888C5D2EF460394AB60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B458FE68C732262CD28274AD11E18E5 /* Pods-cryptickUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-cryptickUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-cryptickUITests/Pods-cryptickUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_cryptickUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC83D39F6B7BA8253BAC70545EA1A490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5019FE182DBFE656F0305E9BFB992500 /* Pods-cryptick.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-cryptick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-cryptick/Pods-cryptick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_cryptick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B2D3DD752F8B8B5C5970BC1BF238D9DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7997E1B148F54BEF62D2F593C9F55085 /* Pods-cryptickTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-cryptickTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-cryptickTests/Pods-cryptickTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_cryptickTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB27FE4F96EB383C14EA10D46C5853AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C619DD39DD648068B7D7C6CB8241724 /* Pods-cryptickUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-cryptickUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-cryptickUITests/Pods-cryptickUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_cryptickUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		374A5D10A57251B6C0859BEE6D069758 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				228A829200E38B3EEC9518492CD7F2DC /* Debug */,
+				319FAFA00588D6DF2EB944A5EEB14142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		393DF6CE09CDB351B1F1912410225086 /* Build configuration list for PBXNativeTarget "Pods-cryptick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC83D39F6B7BA8253BAC70545EA1A490 /* Debug */,
+				1EAE473C3E741B87466884D72F2B2049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77FCFCB3A2F77A1289A57FD4A0B7B870 /* Build configuration list for PBXNativeTarget "Pods-cryptickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB27FE4F96EB383C14EA10D46C5853AD /* Debug */,
+				76C4706DB357888C5D2EF460394AB60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D125DD6D051615713A86F018C17B79C4 /* Build configuration list for PBXNativeTarget "Pods-cryptickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D3DD752F8B8B5C5970BC1BF238D9DF /* Debug */,
+				0D28C252035DBFF198D7092527531BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

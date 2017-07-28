@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07D577FDB45D9BA8F4CAD0DA /* Pods_cryptickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562372E856A5D305EF7E8AE7 /* Pods_cryptickTests.framework */; };
+		34226B40708F476493A05131 /* Pods_cryptick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A619255908BA3729D670994 /* Pods_cryptick.framework */; };
 		3B2936941F212806004375EE /* TickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2936931F212806004375EE /* TickerManager.swift */; };
 		3B2936961F213446004375EE /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2936951F213446004375EE /* Ticker.swift */; };
+		3BA97A261F237FCB00058DDC /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA97A251F237FCB00058DDC /* DateExtension.swift */; };
+		3BA97A281F23CAB600058DDC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA97A271F23CAB600058DDC /* StringExtension.swift */; };
+		3BA97A2B1F23CF6900058DDC /* TickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA97A2A1F23CF6900058DDC /* TickerCollectionViewCell.swift */; };
 		3BCEBADC1F180A600025CD99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBADB1F180A600025CD99 /* AppDelegate.swift */; };
 		3BCEBADE1F180A600025CD99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBADD1F180A600025CD99 /* ViewController.swift */; };
 		3BCEBAE11F180A600025CD99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEBADF1F180A600025CD99 /* Main.storyboard */; };
@@ -17,6 +22,7 @@
 		3BCEBAF11F180A600025CD99 /* cryptickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBAF01F180A600025CD99 /* cryptickTests.swift */; };
 		3BCEBAFC1F180A600025CD99 /* cryptickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBAFB1F180A600025CD99 /* cryptickUITests.swift */; };
 		3BCEBB0D1F1812130025CD99 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBB0C1F1812130025CD99 /* MainViewController.swift */; };
+		D7DD018D69B30DC9DDDD1DE2 /* Pods_cryptickUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176D48886E2B51042588B66F /* Pods_cryptickUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		148816B074B805AB246391F3 /* Pods-cryptick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptick.release.xcconfig"; path = "Pods/Target Support Files/Pods-cryptick/Pods-cryptick.release.xcconfig"; sourceTree = "<group>"; };
+		176D48886E2B51042588B66F /* Pods_cryptickUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryptickUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CCFECC20D82EAA95B077B61 /* Pods-cryptickUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptickUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cryptickUITests/Pods-cryptickUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CD3A85F88BE98885DD0763B /* Pods-cryptick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cryptick/Pods-cryptick.debug.xcconfig"; sourceTree = "<group>"; };
+		3AF65C503FA8A8045F861341 /* Pods-cryptickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptickTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cryptickTests/Pods-cryptickTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B2936931F212806004375EE /* TickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TickerManager.swift; path = Model/TickerManager.swift; sourceTree = "<group>"; };
 		3B2936951F213446004375EE /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ticker.swift; path = Model/Ticker.swift; sourceTree = "<group>"; };
+		3BA97A251F237FCB00058DDC /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Utilities/DateExtension.swift; sourceTree = "<group>"; };
+		3BA97A271F23CAB600058DDC /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Utilities/StringExtension.swift; sourceTree = "<group>"; };
+		3BA97A2A1F23CF6900058DDC /* TickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TickerCollectionViewCell.swift; path = View/TickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BCEBAD81F180A600025CD99 /* cryptick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cryptick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCEBADB1F180A600025CD99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BCEBADD1F180A600025CD99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +67,10 @@
 		3BCEBAFB1F180A600025CD99 /* cryptickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptickUITests.swift; sourceTree = "<group>"; };
 		3BCEBAFD1F180A600025CD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BCEBB0C1F1812130025CD99 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MainView/MainViewController.swift; sourceTree = "<group>"; };
+		562372E856A5D305EF7E8AE7 /* Pods_cryptickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryptickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94FDA38B3A8AEEC04AF4DC69 /* Pods-cryptickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptickUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cryptickUITests/Pods-cryptickUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9A619255908BA3729D670994 /* Pods_cryptick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryptick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD3FC99C0DDB7DC65696107 /* Pods-cryptickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cryptickTests/Pods-cryptickTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34226B40708F476493A05131 /* Pods_cryptick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D577FDB45D9BA8F4CAD0DA /* Pods_cryptickTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DD018D69B30DC9DDDD1DE2 /* Pods_cryptickUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +110,23 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		3BA97A241F237F7700058DDC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3BA97A251F237FCB00058DDC /* DateExtension.swift */,
+				3BA97A271F23CAB600058DDC /* StringExtension.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		3BA97A291F23CF2400058DDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BA97A2A1F23CF6900058DDC /* TickerCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		3BCEBACF1F180A5F0025CD99 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +134,8 @@
 				3BCEBAEF1F180A600025CD99 /* cryptickTests */,
 				3BCEBAFA1F180A600025CD99 /* cryptickUITests */,
 				3BCEBAD91F180A600025CD99 /* Products */,
+				ECC481A8E9F6A44EE0E81FD3 /* Pods */,
+				9B9946BB5C93C07CFA9E3D88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +152,8 @@
 		3BCEBADA1F180A600025CD99 /* cryptick */ = {
 			isa = PBXGroup;
 			children = (
+				3BA97A291F23CF2400058DDC /* View */,
+				3BA97A241F237F7700058DDC /* Utilities */,
 				3B2936921F21029D004375EE /* Model */,
 				3BCEBB0B1F18119B0025CD99 /* Controllers */,
 				3BCEBADB1F180A600025CD99 /* AppDelegate.swift */,
@@ -150,6 +192,29 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		9B9946BB5C93C07CFA9E3D88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A619255908BA3729D670994 /* Pods_cryptick.framework */,
+				562372E856A5D305EF7E8AE7 /* Pods_cryptickTests.framework */,
+				176D48886E2B51042588B66F /* Pods_cryptickUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECC481A8E9F6A44EE0E81FD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3A85F88BE98885DD0763B /* Pods-cryptick.debug.xcconfig */,
+				148816B074B805AB246391F3 /* Pods-cryptick.release.xcconfig */,
+				3AF65C503FA8A8045F861341 /* Pods-cryptickTests.debug.xcconfig */,
+				DCD3FC99C0DDB7DC65696107 /* Pods-cryptickTests.release.xcconfig */,
+				1CCFECC20D82EAA95B077B61 /* Pods-cryptickUITests.debug.xcconfig */,
+				94FDA38B3A8AEEC04AF4DC69 /* Pods-cryptickUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BCEBB001F180A600025CD99 /* Build configuration list for PBXNativeTarget "cryptick" */;
 			buildPhases = (
+				D4A97B85958B924F6C8DBA3F /* [CP] Check Pods Manifest.lock */,
 				3BCEBAD41F180A5F0025CD99 /* Sources */,
 				3BCEBAD51F180A5F0025CD99 /* Frameworks */,
 				3BCEBAD61F180A5F0025CD99 /* Resources */,
+				B05F0DD70AB70F41DE9845F3 /* [CP] Embed Pods Frameworks */,
+				63FF9750B60A08DEFF32E094 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BCEBB031F180A600025CD99 /* Build configuration list for PBXNativeTarget "cryptickTests" */;
 			buildPhases = (
+				63BBE17A4A021C4DFAAA8177 /* [CP] Check Pods Manifest.lock */,
 				3BCEBAE81F180A600025CD99 /* Sources */,
 				3BCEBAE91F180A600025CD99 /* Frameworks */,
 				3BCEBAEA1F180A600025CD99 /* Resources */,
+				AA78E7FF46E5D53E2CC5BF33 /* [CP] Embed Pods Frameworks */,
+				04D0F392859334D8B16D3CF8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BCEBB061F180A600025CD99 /* Build configuration list for PBXNativeTarget "cryptickUITests" */;
 			buildPhases = (
+				E2A88067361FFB1B3BEBE432 /* [CP] Check Pods Manifest.lock */,
 				3BCEBAF31F180A600025CD99 /* Sources */,
 				3BCEBAF41F180A600025CD99 /* Frameworks */,
 				3BCEBAF51F180A600025CD99 /* Resources */,
+				150C48FF34EDA81132359002 /* [CP] Embed Pods Frameworks */,
+				42823AAB3A7FE2BF81A53294 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,12 +356,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04D0F392859334D8B16D3CF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cryptickTests/Pods-cryptickTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		150C48FF34EDA81132359002 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cryptickUITests/Pods-cryptickUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42823AAB3A7FE2BF81A53294 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cryptickUITests/Pods-cryptickUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63BBE17A4A021C4DFAAA8177 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63FF9750B60A08DEFF32E094 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cryptick/Pods-cryptick-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA78E7FF46E5D53E2CC5BF33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cryptickTests/Pods-cryptickTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B05F0DD70AB70F41DE9845F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cryptick/Pods-cryptick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4A97B85958B924F6C8DBA3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2A88067361FFB1B3BEBE432 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BCEBAD41F180A5F0025CD99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3BCEBB0D1F1812130025CD99 /* MainViewController.swift in Sources */,
+				3BA97A281F23CAB600058DDC /* StringExtension.swift in Sources */,
+				3BA97A2B1F23CF6900058DDC /* TickerCollectionViewCell.swift in Sources */,
+				3BA97A261F237FCB00058DDC /* DateExtension.swift in Sources */,
 				3B2936941F212806004375EE /* TickerManager.swift in Sources */,
 				3B2936961F213446004375EE /* Ticker.swift in Sources */,
 				3BCEBADE1F180A600025CD99 /* ViewController.swift in Sources */,
@@ -443,6 +658,7 @@
 		};
 		3BCEBB011F180A600025CD99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CD3A85F88BE98885DD0763B /* Pods-cryptick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C65M6AU29L;
@@ -456,6 +672,7 @@
 		};
 		3BCEBB021F180A600025CD99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148816B074B805AB246391F3 /* Pods-cryptick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C65M6AU29L;
@@ -469,6 +686,7 @@
 		};
 		3BCEBB041F180A600025CD99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AF65C503FA8A8045F861341 /* Pods-cryptickTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +702,7 @@
 		};
 		3BCEBB051F180A600025CD99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD3FC99C0DDB7DC65696107 /* Pods-cryptickTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,6 +718,7 @@
 		};
 		3BCEBB071F180A600025CD99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCFECC20D82EAA95B077B61 /* Pods-cryptickUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = C65M6AU29L;
@@ -513,6 +733,7 @@
 		};
 		3BCEBB081F180A600025CD99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94FDA38B3A8AEEC04AF4DC69 /* Pods-cryptickUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = C65M6AU29L;

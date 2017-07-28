@@ -11,40 +11,34 @@ import UIKit
 
 class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
 
-    var currencySymbolLabel:UILabel!
-    var currencyValueLabel:UILabel!
+    var baseSymbolLabel:UILabel!
+    var priceLabel:UILabel!
+    var activityView:UIActivityIndicatorView!
+    
+    
     
     var collectionView: UICollectionView!
 
     
-    public var currencySymbol:String = ""{
+    var ticker :Ticker? = nil
+    
+    public var base:String = ""{
         didSet {
-            if(currencySymbolLabel != nil){
-                
-                currencySymbolLabel.text = currencySymbol
+            if(base != "" && quote != ""){
+                self.updateData()
             }
         }
     }
     
-    public var refCurrencySymbol:String = ""{
+    public var quote:String = ""{
         didSet {
-            if(currencyValueLabel != nil){
-                currencyValueLabel.text = String.init(format: "%0.2f (%@)", currencyValue, refCurrencySymbol)
+            if(base != "" && quote != ""){
+                self.updateData()
             }
         }
     }
     
-    public var currencyValue:Float = 0.0 {
-        
-        didSet(newCurrencyValue) {
-            if(currencyValueLabel != nil){
-                currencyValueLabel.text = String.init(format: "%0.2f (%@)", currencyValue, refCurrencySymbol)
-            }
-        }
-        
-    }
   
-    
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -53,59 +47,100 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
         layout.itemSize = CGSize(width: 90, height: 120)
         
+        activityView = UIActivityIndicatorView.init(activityIndicatorStyle: .gray)
+        activityView.hidesWhenStopped = true
+        activityView.frame = CGRect(x: self.view.frame.width/2-50, y: self.view.frame.height/2-50, width: 100, height: 100)
+        
         collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.bounces = true
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        collectionView.register(TickerCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         collectionView.backgroundColor = UIColor.white
         self.view.addSubview(collectionView)
         
-        currencySymbolLabel = UILabel()
-        currencySymbolLabel.text = currencySymbol.uppercased()
-        currencySymbolLabel.translatesAutoresizingMaskIntoConstraints = false
-        currencySymbolLabel.textColor = UIColor.white
-        currencySymbolLabel.textAlignment = NSTextAlignment.center
-        view.addSubview(currencySymbolLabel)
+        baseSymbolLabel = UILabel()
+        baseSymbolLabel.translatesAutoresizingMaskIntoConstraints = false
+        baseSymbolLabel.textColor = UIColor.white
+        baseSymbolLabel.textAlignment = NSTextAlignment.center
+        view.addSubview(baseSymbolLabel)
         
-        currencyValueLabel = UILabel()
-        currencyValueLabel.text = String.init(format: "%0.2f (USD)", currencyValue)
-        currencyValueLabel.translatesAutoresizingMaskIntoConstraints = false
-        currencyValueLabel.textColor = UIColor.white
-        currencyValueLabel.textAlignment = NSTextAlignment.center
-        view.addSubview(currencyValueLabel)
+        priceLabel = UILabel()
+        priceLabel.translatesAutoresizingMaskIntoConstraints = false
+        priceLabel.textColor = UIColor.white
+        priceLabel.textAlignment = NSTextAlignment.center
+        view.addSubview(priceLabel)
         
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.updateData(notification:)), name: Notification.Name("com.chinchillasoft.tickerDataupdated"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.startLoading(notification:)), name: Notification.Name("com.chinchillasoft.startLoading"), object: nil)
+        
+        self.view .addSubview(activityView)
+    
         self.makeConstraints()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         //Update the Currency data
-        TickerManager.sharedInstance.fetchAll()
-        
-        
-    
+        self.updateData()
+        self.navigationController?.navigationBar.topItem?.title = self.title
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    deinit
+    {
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("com.chinchillasoft.startLoading"), object: nil)
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("com.chinchillasoft.tickerDataupdated"), object: nil)
+    }
     
+    
+    func startLoading(notification: Notification)
+    {
+        activityView.startAnimating()
+    }
+    
+    func updateData(notification: Notification)
+    {
+        self.updateData()
+        activityView.stopAnimating()
+    }
+    public func updateData()
+    {
+        //Determine the main ticker for this page and update the header
+        ticker = TickerManager.sharedInstance.tickerWith(base: base, quote: quote)
+        if(ticker != nil)
+        {
+            baseSymbolLabel.text = self.base.substring(from: 1).uppercased()
+            priceLabel.text = String.init(format: "%0.2f (%@)", (ticker?.price ?? 0.00)!, self.quote.substring(from: 1).uppercased())
+        }
+        //Update the collectionView with all the pairs
+        if(TickerManager.sharedInstance.tickerReady)
+        {
+            collectionView.reloadData()
+        }
+        
+        
+        
+    }
+
     func makeConstraints(){
         
-        let horizontalConstraint = currencySymbolLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        let verticalConstraint = currencySymbolLabel.topAnchor.constraint(equalTo: view.topAnchor, constant:65.0)
-        let widthConstraint = currencySymbolLabel.widthAnchor.constraint(equalToConstant: 400)
-        let heightConstraint = currencySymbolLabel.heightAnchor.constraint(equalToConstant: 25)
+        let horizontalConstraint = baseSymbolLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        let verticalConstraint = baseSymbolLabel.topAnchor.constraint(equalTo: view.topAnchor, constant:65.0)
+        let widthConstraint = baseSymbolLabel.widthAnchor.constraint(equalToConstant: 400)
+        let heightConstraint = baseSymbolLabel.heightAnchor.constraint(equalToConstant: 25)
         
         
-        let horizontalConstraint1 = currencyValueLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        let verticalConstraint1 = currencyValueLabel.topAnchor.constraint(equalTo: view.topAnchor, constant:90.0)
-        let widthConstraint1 = currencyValueLabel.widthAnchor.constraint(equalToConstant: 400)
-        let heightConstraint1 = currencyValueLabel.heightAnchor.constraint(equalToConstant: 25)
+        let horizontalConstraint1 = priceLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        let verticalConstraint1 = priceLabel.topAnchor.constraint(equalTo: view.topAnchor, constant:90.0)
+        let widthConstraint1 = priceLabel.widthAnchor.constraint(equalToConstant: 400)
+        let heightConstraint1 = priceLabel.heightAnchor.constraint(equalToConstant: 25)
         
         let horizontalConstraint2 = collectionView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         let verticalConstraint2 = collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant:115.0)
@@ -121,13 +156,21 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     
     //CollectionView Datasource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 14;
+        return TickerManager.sharedInstance.activeTicker(base: self.base).count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let ticker = TickerManager.sharedInstance.activeTicker(base: self.base)[indexPath.row]
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         cell.backgroundColor = UIColor.orange
+        let tCell = cell as! TickerCollectionViewCell
+        tCell.quoteLabel.text = ticker.quote?.substring(from: 1)
+        tCell.priceLabel.text = String.localizedStringWithFormat("%0.2f", ticker.price!)
+        tCell.percentLabel.text = String.localizedStringWithFormat("%0.2f%%", 100 * (ticker.percentChange - 1))
+        
         return cell
     }
     
