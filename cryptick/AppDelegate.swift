@@ -20,34 +20,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var navigationController:UINavigationController!
         var tabBarController:UITabBarController!
         var viewController1:MainViewController!
-        var viewController2:MainViewController!
-        var viewController3:UIViewController!
+        //var viewController2:MainViewController!
+       // var viewController3:MainViewController!
+        var viewController4:UIViewController!
         
         //Initialize and fetch the active symbol
-        TickerManager.sharedInstance
+        QuadrigaManager.sharedInstance
         
         
         viewController1 = MainViewController()
-        viewController1.title = "Bitcoin"
-        viewController1.base = "XXBT"
-        viewController1.quote = "ZUSD"
-        viewController1.tabBarItem = UITabBarItem(title: "Bitcoin", image: UIImage(named: "xxbt"), selectedImage: UIImage(named: "xxbt"))
+        viewController1.title = "QuadrigaCX"
+        viewController1.base = "btc"
+        viewController1.quote = "cad"
+        viewController1.tabBarItem = UITabBarItem(title: "QuadrigaCX", image: UIImage(named: "xxbt"), selectedImage: UIImage(named: "xxbt"))
         
-        viewController2 = MainViewController()
+        /*viewController2 = MainViewController()
         viewController2.title = "Ethereum"
-        viewController2.base = "XETH"
-        viewController2.quote = "ZUSD"
+        viewController2.base = "eth"
+        viewController2.quote = "cad"
         viewController2.tabBarItem = UITabBarItem(title: "Ethereum", image: UIImage(named: "xeth"), selectedImage: UIImage(named: "xeth"))
         
-        viewController3 = UIViewController()
-        viewController3.title = "Settings"
+        viewController3 = MainViewController()
+        viewController3.title = "LiteCoin"
+        viewController3.base = "ltc"
+        viewController3.quote = "cad"
+        viewController3.tabBarItem = UITabBarItem(title: "LiteCoin", image: UIImage(named: "xltc"), selectedImage: UIImage(named: "xltc"))*/
+        
+        viewController4 = UIViewController()
+        viewController4.title = "Settings"
         
         tabBarController = UITabBarController()
         tabBarController.addChildViewController(viewController1)
-        tabBarController.addChildViewController(viewController2)
-        tabBarController.addChildViewController(viewController3)
+        //tabBarController.addChildViewController(viewController2)
+        //tabBarController.addChildViewController(viewController3)
+        tabBarController.addChildViewController(viewController4)
+        
+        //tabBarController.tabBar.barTintColor = UIColor.lightGray
+        
         
         navigationController = UINavigationController(rootViewController: tabBarController)
+        //navigationController.navigationBar.barTintColor = UIColor.lightGray
+        
         self.window?.rootViewController = navigationController
         
         return true

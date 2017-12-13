@@ -24,6 +24,9 @@ class Ticker: NSObject {
     var high:Double?
     var volume:Double?
     var openPrice:Double?
+    var vwap:Double?
+    var unchanged:Bool = true
+    var up:Bool = false
     
     
     //Calculated value

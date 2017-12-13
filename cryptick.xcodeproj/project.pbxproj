@@ -22,6 +22,10 @@
 		3BCEBAF11F180A600025CD99 /* cryptickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBAF01F180A600025CD99 /* cryptickTests.swift */; };
 		3BCEBAFC1F180A600025CD99 /* cryptickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBAFB1F180A600025CD99 /* cryptickUITests.swift */; };
 		3BCEBB0D1F1812130025CD99 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEBB0C1F1812130025CD99 /* MainViewController.swift */; };
+		600139FE1FE08B8F0061CE30 /* QuadrigaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600139FD1FE08B8F0061CE30 /* QuadrigaManager.swift */; };
+		60013A221FE1A2A70061CE30 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60013A211FE1A2A70061CE30 /* SwiftyJSON.framework */; };
+		8BB89A0F5E13416E706DC182 /* Pods_cryptick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60013A1D1FE1A0D50061CE30 /* Pods_cryptick.framework */; };
+		D6E8EA4B94796C8832B1F172 /* Pods_cryptick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60013A261FE1A2F80061CE30 /* Pods_cryptick.framework */; };
 		D7DD018D69B30DC9DDDD1DE2 /* Pods_cryptickUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176D48886E2B51042588B66F /* Pods_cryptickUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,19 @@
 			remoteInfo = cryptick;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60013A141FE199B80061CE30 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		148816B074B805AB246391F3 /* Pods-cryptick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptick.release.xcconfig"; path = "Pods/Target Support Files/Pods-cryptick/Pods-cryptick.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +85,14 @@
 		3BCEBAFD1F180A600025CD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BCEBB0C1F1812130025CD99 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MainView/MainViewController.swift; sourceTree = "<group>"; };
 		562372E856A5D305EF7E8AE7 /* Pods_cryptickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryptickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		600139FD1FE08B8F0061CE30 /* QuadrigaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuadrigaManager.swift; path = Model/QuadrigaManager.swift; sourceTree = "<group>"; };
+		600139FF1FE0EF2E0061CE30 /* cryptick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cryptick.entitlements; sourceTree = "<group>"; };
+		60013A051FE199B80061CE30 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		60013A191FE19F4A0061CE30 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60013A1B1FE1A0850061CE30 /* Pods_cryptick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_cryptick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60013A1D1FE1A0D50061CE30 /* Pods_cryptick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_cryptick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60013A211FE1A2A70061CE30 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/cryptick-bjfmjacldkvokldlatvnimzyizuz/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		60013A261FE1A2F80061CE30 /* Pods_cryptick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_cryptick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FDA38B3A8AEEC04AF4DC69 /* Pods-cryptickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptickUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cryptickUITests/Pods-cryptickUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9A619255908BA3729D670994 /* Pods_cryptick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryptick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD3FC99C0DDB7DC65696107 /* Pods-cryptickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cryptickTests/Pods-cryptickTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +104,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				34226B40708F476493A05131 /* Pods_cryptick.framework in Frameworks */,
+				8BB89A0F5E13416E706DC182 /* Pods_cryptick.framework in Frameworks */,
+				60013A221FE1A2A70061CE30 /* SwiftyJSON.framework in Frameworks */,
+				D6E8EA4B94796C8832B1F172 /* Pods_cryptick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				3B2936931F212806004375EE /* TickerManager.swift */,
+				600139FD1FE08B8F0061CE30 /* QuadrigaManager.swift */,
 				3B2936951F213446004375EE /* Ticker.swift */,
 			);
 			name = Model;
@@ -152,15 +181,16 @@
 		3BCEBADA1F180A600025CD99 /* cryptick */ = {
 			isa = PBXGroup;
 			children = (
+				600139FF1FE0EF2E0061CE30 /* cryptick.entitlements */,
 				3BA97A291F23CF2400058DDC /* View */,
 				3BA97A241F237F7700058DDC /* Utilities */,
 				3B2936921F21029D004375EE /* Model */,
 				3BCEBB0B1F18119B0025CD99 /* Controllers */,
 				3BCEBADB1F180A600025CD99 /* AppDelegate.swift */,
 				3BCEBADD1F180A600025CD99 /* ViewController.swift */,
-				3BCEBADF1F180A600025CD99 /* Main.storyboard */,
 				3BCEBAE21F180A600025CD99 /* Assets.xcassets */,
 				3BCEBAE41F180A600025CD99 /* LaunchScreen.storyboard */,
+				3BCEBADF1F180A600025CD99 /* Main.storyboard */,
 				3BCEBAE71F180A600025CD99 /* Info.plist */,
 			);
 			path = cryptick;
@@ -195,9 +225,15 @@
 		9B9946BB5C93C07CFA9E3D88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60013A261FE1A2F80061CE30 /* Pods_cryptick.framework */,
+				60013A1D1FE1A0D50061CE30 /* Pods_cryptick.framework */,
+				60013A1B1FE1A0850061CE30 /* Pods_cryptick.framework */,
+				60013A191FE19F4A0061CE30 /* SwiftyJSON.framework */,
 				9A619255908BA3729D670994 /* Pods_cryptick.framework */,
 				562372E856A5D305EF7E8AE7 /* Pods_cryptickTests.framework */,
 				176D48886E2B51042588B66F /* Pods_cryptickUITests.framework */,
+				60013A211FE1A2A70061CE30 /* SwiftyJSON.framework */,
+				60013A051FE199B80061CE30 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,6 +264,7 @@
 				3BCEBAD61F180A5F0025CD99 /* Resources */,
 				B05F0DD70AB70F41DE9845F3 /* [CP] Embed Pods Frameworks */,
 				63FF9750B60A08DEFF32E094 /* [CP] Copy Pods Resources */,
+				60013A141FE199B80061CE30 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -286,14 +323,19 @@
 		3BCEBAD01F180A5F0025CD99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Steeve Monniere";
 				TargetAttributes = {
 					3BCEBAD71F180A5F0025CD99 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = C65M6AU29L;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					3BCEBAEB1F180A600025CD99 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -408,13 +450,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cryptickTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		63FF9750B60A08DEFF32E094 /* [CP] Copy Pods Resources */ = {
@@ -453,9 +498,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cryptick/Pods-cryptick-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,13 +516,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cryptick-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E2A88067361FFB1B3BEBE432 /* [CP] Check Pods Manifest.lock */ = {
@@ -483,13 +534,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cryptickUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -502,6 +556,7 @@
 				3BCEBB0D1F1812130025CD99 /* MainViewController.swift in Sources */,
 				3BA97A281F23CAB600058DDC /* StringExtension.swift in Sources */,
 				3BA97A2B1F23CF6900058DDC /* TickerCollectionViewCell.swift in Sources */,
+				600139FE1FE08B8F0061CE30 /* QuadrigaManager.swift in Sources */,
 				3BA97A261F237FCB00058DDC /* DateExtension.swift in Sources */,
 				3B2936941F212806004375EE /* TickerManager.swift in Sources */,
 				3B2936961F213446004375EE /* Ticker.swift in Sources */,
@@ -571,7 +626,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -579,7 +636,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -622,7 +683,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -630,7 +693,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -660,7 +727,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1CD3A85F88BE98885DD0763B /* Pods-cryptick.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = C65M6AU29L;
 				INFOPLIST_FILE = cryptick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -674,7 +743,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 148816B074B805AB246391F3 /* Pods-cryptick.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = C65M6AU29L;
 				INFOPLIST_FILE = cryptick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

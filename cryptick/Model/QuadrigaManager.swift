@@ -1,5 +1,5 @@
 //
-//  TickerManager.swift
+//  QuadrigaManager.swift
 //  cryptick
 //
 //  Created by Steeve Monniere on 20-07-2017.
@@ -9,15 +9,16 @@ import Foundation
 import SwiftyJSON
 
 
-class TickerManager :NSObject {
-    static let sharedInstance = TickerManager()
+class QuadrigaManager :NSObject {
+    static let sharedInstance = QuadrigaManager()
     
-    var pairsURL : String = "https://api.kraken.com/0/public/AssetPairs"
-    var tickerURL : String = "https://api.kraken.com/0/public/Ticker?pair=%@"
+    var tickerURL : String = "https://api.quadrigacx.com/v2/ticker?book=%@"
     var lastUpdated : Date?
     var tickers : [Ticker] = []
     var tickerReady :Bool = false
     var fetching :Bool = false
+    
+    let pairs:[String] = ["btc_cad", "btc_usd", "eth_cad", "eth_btc","ltc_cad", "bch_cad", "btg_cad"]
     
     
     
@@ -26,27 +27,18 @@ class TickerManager :NSObject {
         super.init()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(0), execute: {
-            let json = self.fetch(url: self.pairsURL)
-            //print(json);
             
-            for (key,value) in json["result"]
+            for (key) in self.pairs
             {
-                if(!key.contains(".d"))
-                {
-                    let t = Ticker.ticker(base: value["base"].stringValue, quote: value["quote"].stringValue)
-                    
-                    //TODO : Send to user for activation
-                    if(t.base == "XXBT" || t.base == "XETH" || t.base == "XLTC")
-                    {
-                        t.active = true
-                    }
-                    self.tickers.append(t)
-                }
+                let base = key.split(separator: "_")[0]
+                let quote = key.split(separator: "_")[1]
+                let t = Ticker.ticker(base: String(base), quote: String(quote))
+                self.tickers.append(t)
+              
             }
             self.tickerReady = true
-            let refreshTimer = Timer(timeInterval: 10.0, target: self, selector: #selector(TickerManager.fetchAll), userInfo: nil, repeats: true)
+            let refreshTimer = Timer(timeInterval: 10.0, target: self, selector: #selector(QuadrigaManager.fetchAll), userInfo: nil, repeats: true)
             RunLoop.main.add(refreshTimer, forMode: RunLoopMode.defaultRunLoopMode)
-
             self.fetchAll()
         })
         
@@ -56,7 +48,7 @@ class TickerManager :NSObject {
     {
         for t in tickers
         {
-            if(t.active && t.base == base && t.quote == quote)
+            if(t.base == base && t.quote == quote)
             {
                 return t
             }
@@ -64,25 +56,24 @@ class TickerManager :NSObject {
         return nil
     }
     
-    func activeTicker(base:String) -> [Ticker]
+    func activeTicker() -> [Ticker]
     {
         var ret : [Ticker] = []
         for t in tickers
         {
-            if(t.active && t.base == base)
+            if(t.active)
             {
                 ret.append(t)
             }
         }
         return ret
     }
-
-
+    
+    
     func fetchAll()
     {
         if(!fetching)
         {
-            
             if(tickerReady)
             {
                 if(lastUpdated == nil) {
@@ -91,41 +82,50 @@ class TickerManager :NSObject {
                 
                 let now = Date.now()
                 
-                //Create the list of pairs we want to fetch
-                var pairs:[String] = []
-                for t in tickers
-                {
-                    if(t.active)
-                    {
-                        let pair = String.localizedStringWithFormat("%@%@", t.base!, t.quote!)
-                        pairs.append(pair)
-                    }
-                }
                 //Fetch the JSON feed for our pairs
                 //Refresh only if it was not refreshed in the last 10 seconds
                 if(lastUpdated == nil || now.isGreaterThanDate(dateToCompare: (lastUpdated?.addingTimeInterval(10))!))
                 {
-                    let pairString = pairs.joined(separator: ",")
-                    let url = String.localizedStringWithFormat(self.tickerURL, pairString)
-                    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(0), execute: {
-                        self.fetching = true;
-                        let json = self.fetch(url: url)
-                        for (key, value) in json["result"]
-                        {
-                            let ticker = self.tickerWith(code: key)
-                            ticker?.price = value["c"][0].doubleValue
-                            ticker?.openPrice = value["o"].doubleValue
-                            ticker?.low = value["l"][1].doubleValue
-                            ticker?.high = value["h"][1].doubleValue
-                            ticker?.volume = value["v"][1].doubleValue
-                            ticker?.ask = value["a"][0].doubleValue
-                            ticker?.bid = value["b"][0].doubleValue
+                    for(pair) in self.pairs
+                    {
+                        let url = String.localizedStringWithFormat(self.tickerURL, pair)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(0), execute: {
+                            self.fetching = true;
+                            let json = self.fetch(url: url)
+                            
+                            let ticker:Ticker? = self.tickerWith(code: pair)
+                            var oldPrice:Double = 0.0
+                            if(ticker != nil && ticker!.price != nil){
+                                oldPrice = ticker!.price!
+                            }
+                            
+                            
+                            ticker?.price = json["last"].doubleValue
+                            ticker?.vwap = json["vwap"].doubleValue
+                            ticker?.low = json["low"].doubleValue
+                            ticker?.high = json["high"].doubleValue
+                            ticker?.volume = json["volume"].doubleValue
+                            ticker?.ask = json["ask"].doubleValue
+                            ticker?.bid = json["bid"].doubleValue
+                            ticker?.active = true
+                            if(oldPrice != 0.0 && oldPrice != ticker?.price!)
+                            {
+                                ticker?.unchanged = false;
+                                ticker?.up = (ticker?.price!)! > oldPrice
+                            }
+                            else
+                            {
+                                ticker?.unchanged = true
+                                ticker?.up = false
+                            }
                             print("Code : \(ticker!.base ?? "") - \(ticker!.quote ?? "") : \(ticker?.price ?? 0.0)");
                             
-                        }
-                        NotificationCenter.default.post(name: Notification.Name("com.chinchillasoft.tickerDataupdated"), object: nil)
-                        self.fetching = false
-                    })
+                            
+                            NotificationCenter.default.post(name: Notification.Name("com.chinchillasoft.tickerDataupdated"), object: nil)
+                            self.fetching = false
+                        })
+                    }
+                    
                 }
                 lastUpdated = Date.now()
             }
@@ -158,15 +158,17 @@ class TickerManager :NSObject {
         if let data = jsonString.data(using: String.Encoding.utf8, allowLossyConversion: false) {
             
             let json = try? JSON(data: data)
+        
+            
             return json!
         }
         return JSON.null
     }
-
+    
     private func tickerWith(code :String) -> Ticker?
     {
-        let base = code.substring(to:4)
-        let quote = code.substring(from: 4)
+        let base = String(code.split(separator: "_")[0])
+        let quote = String(code.split(separator: "_")[1])
         
         for t in tickers
         {
@@ -178,3 +180,4 @@ class TickerManager :NSObject {
     }
     
 }
+
